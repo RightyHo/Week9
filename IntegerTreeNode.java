@@ -1,7 +1,7 @@
 public class IntegerTreeNode {
-	int value;
-	IntegerTreeNode left;
-	IntegerTreeNode right;
+	private int value;
+	private IntegerTreeNode left;
+	private IntegerTreeNode right;
 
 	public IntegerTreeNode(int value){
 		this.value = value;
@@ -74,14 +74,24 @@ public class IntegerTreeNode {
 		return result;
 	}
 		// return a simplified representation of your tree in String form
-		public String simpleToString(){
-			String result = "[" + String.valueOf(this.value);
-			if(left != null){
-				result = result + left.simpleToString();
-			}
-			if(right != null){
-				result = result + right.simpleToString() + "]";
-			}
-			return result;
+	public String simpleToString(){
+		String result = "[" + String.valueOf(this.value);
+		if(left != null){
+			result = result + left.simpleToString();
+		}
+		if(right != null){
+			result = result + right.simpleToString() + "]";
+		}
+		return result;
+	}
+	public int depth(){
+		int temp1 = 0,temp2 = 0;
+		if(left != null){
+			temp1 =  left.depth() + 1;
+		}
+		if(right != null){
+			temp2 = right.depth() + 1;
+		}
+		return (temp1 > temp2) ? temp1 : temp2;
 	}
 }

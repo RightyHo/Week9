@@ -11,6 +11,8 @@ public class TreeScript {
 		rootNode.add(55);
 		rootNode.add(63);
 		rootNode.add(18);
+		rootNode.add(61);
+		rootNode.add(10);
 		if(rootNode.contains(55)){
 			System.out.println("This tree contains the number 55!  CORRECT!");
 		} else {
@@ -25,5 +27,6 @@ public class TreeScript {
 		System.out.println("The smallest value in the tree is " + rootNode.getMin());
 		System.out.println(rootNode.toString());
 		System.out.println(rootNode.simpleToString());
+		System.out.println("Your tree has this many levels: " + rootNode.depth());
 	}
 }
