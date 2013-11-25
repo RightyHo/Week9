@@ -64,13 +64,24 @@ public class IntegerTreeNode {
 		if(left == null){
 			result = result + " L[]";
 		} else {
-			result = result + " L[" + left.toString() + "]";
+			result = result + " L" + left.toString();
 		}
 		if(right == null){
 			result = result + " R[]";
 		} else {
-			result = result + " R[" + right.toString() + "]";
+			result = result + " R" + right.toString() + "]";
 		}
 		return result;
+	}
+		// return a simplified representation of your tree in String form
+		public String simpleToString(){
+			String result = "[" + String.valueOf(this.value);
+			if(left != null){
+				result = result + left.simpleToString();
+			}
+			if(right != null){
+				result = result + right.simpleToString() + "]";
+			}
+			return result;
 	}
 }

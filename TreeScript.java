@@ -24,5 +24,6 @@ public class TreeScript {
 		System.out.println("The largest value in the tree is " + rootNode.getMax());
 		System.out.println("The smallest value in the tree is " + rootNode.getMin());
 		System.out.println(rootNode.toString());
+		System.out.println(rootNode.simpleToString());
 	}
 }
