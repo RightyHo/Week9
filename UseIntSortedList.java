@@ -5,7 +5,7 @@ public class UseIntSortedList {
 	}
 	public void launch(){
 		IntSortedList tISL = new TreeIntSortedList();
-//		IntSet lIS = new ListIntSet();
+		IntSortedList lISL = new ListIntSortedList();
 		tISL.add(15);
 		tISL.add(19);
 		tISL.add(33);		
@@ -33,30 +33,33 @@ public class UseIntSortedList {
 			System.out.println("This tree DOES NOT contain the number 88 FALSE");
 		}
 		System.out.println(tISL.toString());	
-//		lIS.add(15);
-//		lIS.add(19);
-//		lIS.add(33);		
-//		lIS.add(42);
-//		lIS.add(4);
-//		lIS.add(28);	
-//		lIS.add(9);	
-//		lIS.add(16);		
-//		lIS.add(88);
-//		if(lIS.contains(17)){
-//			System.out.println("LIST VERSION:  This tree contains the number 17 - FALSE");
-//		} else {
-//			System.out.println("LIST VERSION:  This tree DOES NOT contain the number 17 - TRUE");
-//		}
-//		if(lIS.contains(28)){
-//			System.out.println("LIST VERSION:  This tree contains the number 28 - TRUE");
-//		} else {
-//			System.out.println("LIST VERSION:  This tree DOES NOT contain the number 28 FALSE");
-//		}
-//		if(lIS.contains(88)){
-//			System.out.println("LIST VERSION:  This tree contains the number 88 - TRUE");
-//		} else {
-//			System.out.println("LIST VERSION:  This tree DOES NOT contain the number 88 FALSE");
-//		}
-//		System.out.println(lIS.toString());
+		
+		lISL.add(15);
+		lISL.add(19);
+		lISL.add(33);		
+		lISL.add(42);
+		lISL.add(4);
+		lISL.add(28);
+		lISL.add(19);	
+		lISL.add(9);	
+		lISL.add(16);
+		lISL.add(42);		
+		lISL.add(88);				
+		if(lISL.contains(17)){
+			System.out.println("Linked List Version: This tree contains the number 17 - FALSE");
+		} else {
+			System.out.println("Linked List Version: This tree DOES NOT contain the number 17 - TRUE");
+		}
+		if(lISL.contains(28)){
+			System.out.println("Linked List Version: This tree contains the number 28 - TRUE");
+		} else {
+			System.out.println("Linked List Version: This tree DOES NOT contain the number 28 FALSE");
+		}
+		if(lISL.contains(88)){
+			System.out.println("Linked List Version: This tree contains the number 88 - TRUE");
+		} else {
+			System.out.println("Linked List Version: This tree DOES NOT contain the number 88 FALSE");
+		}
+		System.out.println(lISL.toString());	
 	}
 }
